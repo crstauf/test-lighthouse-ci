@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Lighthouse CI Action
-      uses: treosh/lighthouse-ci-action@v9
+    - uses: treosh/lighthouse-ci-action@v9
       with:
         urls: |
           https://develop.calebstauffer.com
         uploadArtifacts: true # save results as an action artifacts
         temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+        runs: 3
