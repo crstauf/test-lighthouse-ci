@@ -15,5 +15,5 @@ jobs:
         urls: |
           https://develop.calebstauffer.com
         uploadArtifacts: true # save results as an action artifacts
-        # temporaryPublicStorage: true # upload lighthouse report to the temporary storage
-        runs: 3
+        temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+        # runs: 3
